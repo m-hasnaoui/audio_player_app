@@ -1,6 +1,7 @@
 import 'package:audio_player_app/pages/home_page.dart';
 import 'package:audio_player_app/pages/list_audios_page.dart';
 import 'package:audio_player_app/pages/privacy_policy_page.dart';
+import 'package:audio_player_app/utils/theme.dart';
 import 'package:audio_player_app/utils/tools.dart';
 import 'package:flutter/material.dart';
 
@@ -23,6 +24,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        fontFamily: 'Montserrat',
+        canvasColor: MyColors.backGround,
       ),
       routes: routes,
       home: SplashScreen(),
