@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           MyAppBar(
             title: Text(Tools.packageInfo.appName),
+            subTitle: Text(Strings.home),
           ),
           Expanded(
             child: Container(

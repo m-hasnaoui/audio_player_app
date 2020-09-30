@@ -2,6 +2,7 @@ import 'package:audio_player_app/utils/tools.dart';
 
 class Strings {
   static final String home = "الرئيسية";
+  static final String playlist = "قائمة التشغيل";
   static final String listen = "استمع الآن";
   static final String rate = "تقييم التطبيق";
   static final String more = "تطبيقات أخرى";

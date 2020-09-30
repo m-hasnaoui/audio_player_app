@@ -21,7 +21,7 @@ class AudiosHelper {
   ];
 
   static Future<void> fillAudio(){
-    audios = new List<Audio>(audiosLocations.length);
+    audios = new List<Audio>();
     for(String item in audiosLocations){
       Audio audio = Audio(
         item,

@@ -6,6 +6,8 @@ import 'package:audio_player_app/widgets/appbar.dart';
 import 'package:audio_player_app/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/strings.dart';
+
 class PlaylistAudios extends StatefulWidget {
   @override
   _PlaylistAudiosState createState() => _PlaylistAudiosState();
@@ -52,6 +54,7 @@ class _PlaylistAudiosState extends State<PlaylistAudios> {
         children: [
           MyAppBar(
             title: Text(Tools.packageInfo.appName),
+            subTitle: Text(Strings.playlist),
           ),
           Expanded(
             child: Column(

@@ -7,10 +7,17 @@ import 'package:flutter_svg/flutter_svg.dart';
 class MyAppBar extends StatefulWidget {
   final Widget leading;
   final Widget title;
+  final Widget subTitle;
   final Color color;
   final List<Widget> actions;
 
-  const MyAppBar({Key key, this.title, this.actions, this.leading, this.color})
+  const MyAppBar(
+      {Key key,
+      this.title,
+      this.actions,
+      this.leading,
+      this.color,
+      this.subTitle})
       : super(key: key);
 
   @override
@@ -45,6 +52,7 @@ class _MyAppBarState extends State<MyAppBar> {
               bottomLeft: Radius.circular(100.0),
             ),
           ),
+          child: Center(child: widget.subTitle),
         ),
       ],
     );
