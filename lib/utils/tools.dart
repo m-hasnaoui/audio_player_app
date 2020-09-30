@@ -1,6 +1,5 @@
 import 'package:audio_player_app/utils/strings.dart';
 import 'package:package_info/package_info.dart';
-import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class Tools{

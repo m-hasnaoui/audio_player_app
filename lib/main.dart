@@ -4,7 +4,6 @@ import 'package:audio_player_app/pages/playlist_page.dart';
 import 'package:audio_player_app/pages/privacy_policy_page.dart';
 import 'package:audio_player_app/pages/splash_screen.dart';
 import 'package:audio_player_app/utils/theme.dart';
-import 'package:audio_player_app/utils/tools.dart';
 import 'package:flutter/material.dart';
 
 var routes = <String, WidgetBuilder>{

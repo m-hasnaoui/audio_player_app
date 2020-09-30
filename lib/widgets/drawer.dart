@@ -2,8 +2,6 @@ import 'package:audio_player_app/utils/theme.dart';
 import 'package:audio_player_app/utils/tools.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:getwidget/colors/gf_color.dart';
-import 'package:getwidget/components/button/gf_button.dart';
 import 'package:getwidget/components/drawer/gf_drawer.dart';
 import 'package:getwidget/getwidget.dart';
 
