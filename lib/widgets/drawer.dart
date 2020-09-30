@@ -64,20 +64,38 @@ class MyDarawer extends StatelessWidget {
             ),
             SizedBox(height: 20.0,),
             Expanded(
-              child: Column(
-                children: [
-                  ListTile(
-                    leading: SvgPicture.asset('assets/icons/home.svg', height: 25.0),
-                    title: Text('Home', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
-                    onTap: () {},
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 30.0),
+                child: Column(
+                  children: [
+                    ListTile(
+                      leading: SvgPicture.asset('assets/icons/home.svg', height: 25.0),
+                      title: Text('Home', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+                      onTap: () {},
+                    ),
+                    ListTile(
+                      leading: SvgPicture.asset('assets/icons/rate_us.svg', height: 25.0),
+                      title: Text('Rate Us', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+                      onTap: () {},
+                    ),
+                    ListTile(
+                      leading: SvgPicture.asset('assets/icons/more_apps.svg', height: 25.0),
+                      title: Text('More Apps', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+                      onTap: () {},
+                    ),
+                    ListTile(
+                      leading: SvgPicture.asset('assets/icons/about_us.svg', height: 25.0),
+                      title: Text('About', style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.white)),
+                      onTap: () {},
+                    ),
+                  ],
+                ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
-                'Developed with ❤',
+                'Developed with 🤍',
                 style: TextStyle(color: Colors.black45),
               ),
             )
