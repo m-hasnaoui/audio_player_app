@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:getwidget/components/drawer/gf_drawer.dart';
 import 'package:getwidget/getwidget.dart';
-
-import '../utils/strings.dart';
-import '../utils/strings.dart';
-import '../utils/strings.dart';
+import 'package:audio_player_app/utils/strings.dart';
 
 class MyDarawer extends StatelessWidget {
   @override
@@ -29,7 +26,7 @@ class MyDarawer extends StatelessWidget {
                       height: MediaQuery.of(context).size.width,
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
-                        color: MyColors.accent,
+                        color: MyColors.rosado,
                         shape: BoxShape.circle,
                       ),
                     ),
@@ -48,8 +45,7 @@ class MyDarawer extends StatelessWidget {
                           padding: const EdgeInsets.all(10.0),
                           child: Text(
                             Tools.packageInfo.appName,
-                            style: MyTextStyles.styleAppName
-                                .apply(color: Colors.white),
+                            style: MyTextStyles.styleAppName,
                           ),
                         ),
                       ],

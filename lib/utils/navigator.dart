@@ -5,8 +5,8 @@ class MyNavigator{
     Navigator.pushReplacementNamed(context, '/home');
   }
 
-  static void goList(BuildContext context) {
-    Navigator.pushNamed(context, '/liste');
+  static void goPlaylist(BuildContext context) {
+    Navigator.pushNamed(context, '/playliste');
   }
 
   static void goPrivacy(BuildContext context) {

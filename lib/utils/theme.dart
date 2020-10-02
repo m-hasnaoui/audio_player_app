@@ -2,15 +2,22 @@ import 'package:flutter/material.dart';
 
 
 class MyColors{
-  static Color primary = Color(0xffe63946);
-  static Color accent = Color(0xff457b9d);
-  static Color backGround = Color(0xff333533);
+  static const Color blueBlackBackground  = Color(0xFF2D3436);
+  static const Color gris = Color(0xFFA2A2A2);
+  static const Color rosado = Color(0xFFFE1773);
+  static const Color rosaligh = Color(0xFFE76EAE);
+  static const Color celeste = Color(0xFF78D7FE);
+  static const Color blueBlackBar = Color(0xFF1C2425);
+  static const Color blueBlackCont = Color(0xFF23292F);
+  static const Color rosadoLigth = Color(0xFFFE1773);
+  static const Color blueBottomSheet = Color(0xFF161F28);
 }
 
 class MyTextStyles {
-  static TextStyle styleAppName = TextStyle(
-      fontSize: 25, fontWeight: FontWeight.bold, fontFamily: 'SuezOne', color: MyColors.primary);
-  static TextStyle style1normal = TextStyle(fontSize: 24);
-  static TextStyle style1Bold =
+  static const TextStyle styleAppName = TextStyle(
+      fontSize: 25, fontWeight: FontWeight.bold, fontFamily: 'Cairo', color: Colors.white);
+  static const TextStyle title = TextStyle(fontWeight: FontWeight.bold,color: MyColors.gris);
+  static const TextStyle style1normal = TextStyle(fontSize: 24);
+  static const TextStyle style1Bold =
       TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
 }

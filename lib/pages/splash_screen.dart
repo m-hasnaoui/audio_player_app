@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.wait(
         [
           Tools.getAppInfo(),
-          AudiosHelper.fillAudio(),
+          AudiosHelper.fillAudios(),
           Future.delayed(Duration(seconds: 3)),
         ]).then((value) {
       Navigator.push(context,

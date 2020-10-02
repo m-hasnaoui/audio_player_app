@@ -6,7 +6,8 @@ import 'package:audio_player_app/widgets/appbar.dart';
 import 'package:audio_player_app/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
-import '../utils/strings.dart';
+import 'package:audio_player_app/utils/audios_helper.dart';
+import 'package:audio_player_app/utils/theme.dart';
 
 class PlaylistAudios extends StatefulWidget {
   @override
@@ -53,14 +54,24 @@ class _PlaylistAudiosState extends State<PlaylistAudios> {
       body: Column(
         children: [
           MyAppBar(
-            title: Text(Tools.packageInfo.appName),
-            subTitle: Text(Strings.playlist),
+            title: Text(Tools.packageInfo.appName +' اينس سيبنتيب  سيبتا', style: MyTextStyles.title),
           ),
           Expanded(
             child: Column(
               children: [
                 Container(),
-                Container(),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: AudiosHelper.musics.length,
+                    itemBuilder: (ctx, index){
+                      print('==========================> length : ${AudiosHelper.musics.length}');
+                        return ListTile(
+                          leading: Icon(Icons.adjust),
+                          title: Text(AudiosHelper.musics[index].title),
+                        );
+                    },
+                  ),
+                )
               ],
             ),
           ),

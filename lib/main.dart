@@ -8,7 +8,8 @@ import 'package:flutter/material.dart';
 
 var routes = <String, WidgetBuilder>{
   "/home": (BuildContext context) => HomePage(),
-  "/liste": (BuildContext context) => PlaylistAudios(),
+  "/playliste": (BuildContext context) => PlaylistAudios(),
+  "/playing": (BuildContext context) => PlaylistAudios(),
   "/privacypolicy": (BuildContext context) => PrivacyPolicyPage(),
 };
 
@@ -26,12 +27,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Audio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        fontFamily: 'Montserrat',
-        canvasColor: MyColors.backGround,
+        fontFamily: 'Cairo',
+        canvasColor: MyColors.blueBlackBackground,
       ),
       routes: routes,
       home: SplashScreen(),
