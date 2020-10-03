@@ -1,6 +1,7 @@
 import 'package:audio_player_app/utils/theme.dart';
 import 'package:audio_player_app/utils/tools.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:getwidget/components/AppBar/gf_AppBar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -37,7 +38,7 @@ class _MyAppBarState extends State<MyAppBar> {
               ),
           title: widget.title ?? Text(Tools.packageInfo.appName, style: MyTextStyles.title,),
           centerTitle: true,
-          actions: widget.actions ?? [IconButton(onPressed: (){},icon: SvgPicture.asset('assets/icons/gift.svg', color: MyColors.gris, width: 25.0))],
+          actions: widget.actions ?? [IconButton(onPressed: (){},icon: Icon(FontAwesomeIcons.gift, color: MyColors.gris,))],
           elevation: 0.0,
         )/*,
         Container(

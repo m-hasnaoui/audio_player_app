@@ -15,7 +15,7 @@ class Tools{
     buildNumber: ' ',
   );
 
-  static Future<String> copyDataBase() async {
+  static Future<bool> copyDataBase() async {
     String path = '';
     try {
       Directory documentsDirectory = await getApplicationDocumentsDirectory();
@@ -49,13 +49,14 @@ class Tools{
     } catch (e) {
       print("Erreur Copie : $e");
     }
-    return path;
+    return true;
   }
 
-  static Future<void> getAppInfo() async {
+  static Future<bool> getAppInfo() async {
     final PackageInfo info = await PackageInfo.fromPlatform();
     packageInfo = info;
     print('===========> Package info exucited');
+    return true;
   }
 
   static launchURLRate() async {

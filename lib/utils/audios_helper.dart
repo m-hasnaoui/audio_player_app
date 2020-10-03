@@ -8,16 +8,18 @@ class AudiosHelper {
   static List<Music> musics = new List<Music>();
   static List<Audio> audios;
 
-  static Future<void> fillAudios() async {
+  static Future<bool> fillAudios() async {
     audios = new List<Audio>();
 
     await Tools.copyDataBase();
 
-    DatabaseProvider provider = new DatabaseProvider();
-    provider.getAllMusics().then((onValue) {
+    DatabaseProvider dbProvider = new DatabaseProvider();
+
+    dbProvider.getAllMusics().then((onValue) {
       musics = onValue;
     });
-    for (Music item in musics) {
+
+    await Future.forEach(musics, (item) async {
       Audio audio = Audio(
         item.location,
         metas: Metas(
@@ -29,7 +31,22 @@ class AudiosHelper {
         ),
       );
       audios.add(audio);
-    }
-    return Future.value(true);
+    });
+
+    /*for (Music item in musics) {
+      Audio audio = Audio(
+        item.location,
+        metas: Metas(
+          id: item.title.split('/').last.split('.').first,
+          title: item.title.split('/').last.split('.').first,
+          artist: Strings.storeName,
+          album: Tools.packageInfo.appName,
+          image: MetasImage.asset(item.image),
+        ),
+      );
+      audios.add(audio);
+      print('==========================> AUDIO ADDED');
+    }*/
+    return true;
   }
 }

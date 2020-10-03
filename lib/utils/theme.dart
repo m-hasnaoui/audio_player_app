@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-
-class MyColors{
-  static const Color blueBlackBackground  = Color(0xFF2D3436);
+class MyColors {
+  static const Color blueBlackBackground = Color(0xFF2D3436);
   static const Color gris = Color(0xFFA2A2A2);
   static const Color rosado = Color(0xFFFE1773);
   static const Color rosaligh = Color(0xFFE76EAE);
@@ -15,9 +14,19 @@ class MyColors{
 
 class MyTextStyles {
   static const TextStyle styleAppName = TextStyle(
-      fontSize: 25, fontWeight: FontWeight.bold, fontFamily: 'Cairo', color: Colors.white);
-  static const TextStyle title = TextStyle(fontWeight: FontWeight.bold,color: MyColors.gris);
-  static const TextStyle style1normal = TextStyle(fontSize: 24);
-  static const TextStyle style1Bold =
-      TextStyle(fontSize: 24, fontWeight: FontWeight.bold);
+      fontSize: 25,
+      fontWeight: FontWeight.bold,
+      fontFamily: 'Cairo',
+      color: Colors.white);
+  static const TextStyle title =
+      TextStyle(fontWeight: FontWeight.bold, color: Colors.white);
+  static const TextStyle styleTitleSong = TextStyle(
+      fontWeight: FontWeight.w600,
+      fontFamily: 'Poppins',
+      fontSize: 15,
+      letterSpacing: 0.5);
+  static const TextStyle styleArtista = TextStyle(
+      fontFamily: 'Poppins',
+      fontSize: 13,
+      letterSpacing: 0.8);
 }
